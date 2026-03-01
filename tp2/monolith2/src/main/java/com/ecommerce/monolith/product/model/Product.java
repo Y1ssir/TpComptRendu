@@ -3,7 +3,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
 import java.math.BigDecimal;
-import com.ecommerce.monolith.category.model.Category;
+import com.ecommerce.monolith.customer.entity.Customer;
 
 @Entity
 @Table(name = "products")
@@ -31,5 +31,5 @@ public class Product {
     private Integer stock;
     @ManyToOne
     @JoinColumn(name = "category_id")
-    private Category category;
+    private Customer customer;
 }
