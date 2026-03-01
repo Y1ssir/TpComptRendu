@@ -28,7 +28,7 @@ public class ProductService {
         product.setDescription(details.getDescription());
         product.setPrice(details.getPrice());
         product.setStock(details.getStock());
-        return product; // save inutile si entité managed
+        return product;
     }
     public void delete(Long id) {
         Product product = getById(id);
